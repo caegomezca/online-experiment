@@ -53,40 +53,646 @@ replace localidad = 18 if loc == "Los Mártires"
 replace localidad = 19 if loc == "La Candelaria"
 replace localidad = 20 if loc == "Fuera de Bogotá"
 
+*word for alto1-2 and bajo1-2  m y r
+*First district with higher transfer and first elicitated word
+gen alto1_word_1 = violence_project1playerm1 if (violence_project1playerd1a == "Kennedy") 
+replace alto1_word_1 = violence_project1playerm2 if (violence_project1playerd1a == "Suba") 
+replace alto1_word_1 = violence_project1playerm3 if (violence_project1playerd1a == "Engativá")
+replace alto1_word_1 = violence_project1playerm4 if (violence_project1playerd1a == "Ciudad Bolivar")
+replace alto1_word_1 = violence_project1playerm5 if (violence_project1playerd1a == "Bosa")
+replace alto1_word_1 = violence_project1playerm6 if (violence_project1playerd1a == "Usaquén")
+replace alto1_word_1 = violence_project1playerm7 if (violence_project1playerd1a == "San Cristobal")
+replace alto1_word_1 = violence_project1playerm8 if (violence_project1playerd1a == "Rafael Uribe")
+replace alto1_word_1 = violence_project1playerm9 if (violence_project1playerd1a == "Fontibón")
+replace alto1_word_1 = violence_project1playerm10 if (violence_project1playerd1a == "Usme")
+replace alto1_word_1 = violence_project1playerm11 if (violence_project1playerd1a == "Puente Aranda")
+replace alto1_word_1 = violence_project1playerm12 if (violence_project1playerd1a == "Barrios Unidos")
+replace alto1_word_1 = violence_project1playerm13 if (violence_project1playerd1a == "Tunjuelito")
+replace alto1_word_1 = violence_project1playerm14 if (violence_project1playerd1a == "Teusaquillo")
+replace alto1_word_1 = violence_project1playerm15 if (violence_project1playerd1a == "Chapinero")
+replace alto1_word_1 = violence_project1playerm16 if (violence_project1playerd1a == "Antonio Nariño")
+replace alto1_word_1 = violence_project1playerm17 if (violence_project1playerd1a == "Santa Fe")
+replace alto1_word_1 = violence_project1playerm18 if (violence_project1playerd1a == "Los Mártires")
+replace alto1_word_1 = violence_project1playerm19 if (violence_project1playerd1a == "La Candelaria")
+
+*First district with higher transfer and second elicitated word
+gen alto1_word_2 = violence_project1playerr1 if (violence_project1playerd1a == "Kennedy") 
+replace alto1_word_2 = violence_project1playerr2 if (violence_project1playerd1a == "Suba") 
+replace alto1_word_2 = violence_project1playerr3 if (violence_project1playerd1a == "Engativá")
+replace alto1_word_2 = violence_project1playerr4 if (violence_project1playerd1a == "Ciudad Bolivar")
+replace alto1_word_2 = violence_project1playerr5 if (violence_project1playerd1a == "Bosa")
+replace alto1_word_2 = violence_project1playerr6 if (violence_project1playerd1a == "Usaquén")
+replace alto1_word_2 = violence_project1playerr7 if (violence_project1playerd1a == "San Cristobal")
+replace alto1_word_2 = violence_project1playerr8 if (violence_project1playerd1a == "Rafael Uribe")
+replace alto1_word_2 = violence_project1playerr9 if (violence_project1playerd1a == "Fontibón")
+replace alto1_word_2 = violence_project1playerr10 if (violence_project1playerd1a == "Usme")
+replace alto1_word_2 = violence_project1playerr11 if (violence_project1playerd1a == "Puente Aranda")
+replace alto1_word_2 = violence_project1playerr12 if (violence_project1playerd1a == "Barrios Unidos")
+replace alto1_word_2 = violence_project1playerr13 if (violence_project1playerd1a == "Tunjuelito")
+replace alto1_word_2 = violence_project1playerr14 if (violence_project1playerd1a == "Teusaquillo")
+replace alto1_word_2 = violence_project1playerr15 if (violence_project1playerd1a == "Chapinero")
+replace alto1_word_2 = violence_project1playerr16 if (violence_project1playerd1a == "Antonio Nariño")
+replace alto1_word_2 = violence_project1playerr17 if (violence_project1playerd1a == "Santa Fe")
+replace alto1_word_2 = violence_project1playerr18 if (violence_project1playerd1a == "Los Mártires")
+replace alto1_word_2 = violence_project1playerr19 if (violence_project1playerd1a == "La Candelaria")
+
+
+*Second district with higher transfer and first elicitated word
+gen alto2_word_1 = violence_project1playerm1 if (violence_project1playerd1b == "Kennedy") 
+replace alto2_word_1 = violence_project1playerm2 if (violence_project1playerd1b == "Suba") 
+replace alto2_word_1 = violence_project1playerm3 if (violence_project1playerd1b == "Engativá")
+replace alto2_word_1 = violence_project1playerm4 if (violence_project1playerd1b == "Ciudad Bolivar")
+replace alto2_word_1 = violence_project1playerm5 if (violence_project1playerd1b == "Bosa")
+replace alto2_word_1 = violence_project1playerm6 if (violence_project1playerd1b == "Usaquén")
+replace alto2_word_1 = violence_project1playerm7 if (violence_project1playerd1b == "San Cristobal")
+replace alto2_word_1 = violence_project1playerm8 if (violence_project1playerd1b == "Rafael Uribe")
+replace alto2_word_1 = violence_project1playerm9 if (violence_project1playerd1b == "Fontibón")
+replace alto2_word_1 = violence_project1playerm10 if (violence_project1playerd1b == "Usme")
+replace alto2_word_1 = violence_project1playerm11 if (violence_project1playerd1b == "Puente Aranda")
+replace alto2_word_1 = violence_project1playerm12 if (violence_project1playerd1b == "Barrios Unidos")
+replace alto2_word_1 = violence_project1playerm13 if (violence_project1playerd1b == "Tunjuelito")
+replace alto2_word_1 = violence_project1playerm14 if (violence_project1playerd1b == "Teusaquillo")
+replace alto2_word_1 = violence_project1playerm15 if (violence_project1playerd1b == "Chapinero")
+replace alto2_word_1 = violence_project1playerm16 if (violence_project1playerd1b == "Antonio Nariño")
+replace alto2_word_1 = violence_project1playerm17 if (violence_project1playerd1b == "Santa Fe")
+replace alto2_word_1 = violence_project1playerm18 if (violence_project1playerd1b == "Los Mártires")
+replace alto2_word_1 = violence_project1playerm19 if (violence_project1playerd1b == "La Candelaria")
+
+*Second district with higher transfer and second elicitated word
+gen alto2_word_2 = violence_project1playerr1 if (violence_project1playerd1b == "Kennedy") 
+replace alto2_word_2 = violence_project1playerr2 if (violence_project1playerd1b == "Suba") 
+replace alto2_word_2 = violence_project1playerr3 if (violence_project1playerd1b == "Engativá")
+replace alto2_word_2 = violence_project1playerr4 if (violence_project1playerd1b == "Ciudad Bolivar")
+replace alto2_word_2 = violence_project1playerr5 if (violence_project1playerd1b == "Bosa")
+replace alto2_word_2 = violence_project1playerr6 if (violence_project1playerd1b == "Usaquén")
+replace alto2_word_2 = violence_project1playerr7 if (violence_project1playerd1b == "San Cristobal")
+replace alto2_word_2 = violence_project1playerr8 if (violence_project1playerd1b == "Rafael Uribe")
+replace alto2_word_2 = violence_project1playerr9 if (violence_project1playerd1b == "Fontibón")
+replace alto2_word_2 = violence_project1playerr10 if (violence_project1playerd1b == "Usme")
+replace alto2_word_2 = violence_project1playerr11 if (violence_project1playerd1b == "Puente Aranda")
+replace alto2_word_2 = violence_project1playerr12 if (violence_project1playerd1b == "Barrios Unidos")
+replace alto2_word_2 = violence_project1playerr13 if (violence_project1playerd1b == "Tunjuelito")
+replace alto2_word_2 = violence_project1playerr14 if (violence_project1playerd1b == "Teusaquillo")
+replace alto2_word_2 = violence_project1playerr15 if (violence_project1playerd1b == "Chapinero")
+replace alto2_word_2 = violence_project1playerr16 if (violence_project1playerd1b == "Antonio Nariño")
+replace alto2_word_2 = violence_project1playerr17 if (violence_project1playerd1b == "Santa Fe")
+replace alto2_word_2 = violence_project1playerr18 if (violence_project1playerd1b == "Los Mártires")
+replace alto2_word_2 = violence_project1playerr19 if (violence_project1playerd1b == "La Candelaria")
+
+*First district with lower transfer and first elicitated word
+gen bajo1_word_1 = violence_project1playerm1 if (violence_project1playerd2a == "Kennedy") 
+replace bajo1_word_1 = violence_project1playerm2 if (violence_project1playerd2a == "Suba") 
+replace bajo1_word_1 = violence_project1playerm3 if (violence_project1playerd2a == "Engativá")
+replace bajo1_word_1 = violence_project1playerm4 if (violence_project1playerd2a == "Ciudad Bolivar")
+replace bajo1_word_1 = violence_project1playerm5 if (violence_project1playerd2a == "Bosa")
+replace bajo1_word_1 = violence_project1playerm6 if (violence_project1playerd2a == "Usaquén")
+replace bajo1_word_1 = violence_project1playerm7 if (violence_project1playerd2a == "San Cristobal")
+replace bajo1_word_1 = violence_project1playerm8 if (violence_project1playerd2a == "Rafael Uribe")
+replace bajo1_word_1 = violence_project1playerm9 if (violence_project1playerd2a == "Fontibón")
+replace bajo1_word_1 = violence_project1playerm10 if (violence_project1playerd2a == "Usme")
+replace bajo1_word_1 = violence_project1playerm11 if (violence_project1playerd2a == "Puente Aranda")
+replace bajo1_word_1 = violence_project1playerm12 if (violence_project1playerd2a == "Barrios Unidos")
+replace bajo1_word_1 = violence_project1playerm13 if (violence_project1playerd2a == "Tunjuelito")
+replace bajo1_word_1 = violence_project1playerm14 if (violence_project1playerd2a == "Teusaquillo")
+replace bajo1_word_1 = violence_project1playerm15 if (violence_project1playerd2a == "Chapinero")
+replace bajo1_word_1 = violence_project1playerm16 if (violence_project1playerd2a == "Antonio Nariño")
+replace bajo1_word_1 = violence_project1playerm17 if (violence_project1playerd2a == "Santa Fe")
+replace bajo1_word_1 = violence_project1playerm18 if (violence_project1playerd2a == "Los Mártires")
+replace bajo1_word_1 = violence_project1playerm19 if (violence_project1playerd2a == "La Candelaria")
+
+*First district with lower transfer and second elicitated word
+gen bajo1_word_2 = violence_project1playerr1 if (violence_project1playerd2a == "Kennedy") 
+replace bajo1_word_2 = violence_project1playerr2 if (violence_project1playerd2a == "Suba") 
+replace bajo1_word_2 = violence_project1playerr3 if (violence_project1playerd2a == "Engativá")
+replace bajo1_word_2 = violence_project1playerr4 if (violence_project1playerd2a == "Ciudad Bolivar")
+replace bajo1_word_2 = violence_project1playerr5 if (violence_project1playerd2a == "Bosa")
+replace bajo1_word_2 = violence_project1playerr6 if (violence_project1playerd2a == "Usaquén")
+replace bajo1_word_2 = violence_project1playerr7 if (violence_project1playerd2a == "San Cristobal")
+replace bajo1_word_2 = violence_project1playerr8 if (violence_project1playerd2a == "Rafael Uribe")
+replace bajo1_word_2 = violence_project1playerr9 if (violence_project1playerd2a == "Fontibón")
+replace bajo1_word_2 = violence_project1playerr10 if (violence_project1playerd2a == "Usme")
+replace bajo1_word_2 = violence_project1playerr11 if (violence_project1playerd2a == "Puente Aranda")
+replace bajo1_word_2 = violence_project1playerr12 if (violence_project1playerd2a == "Barrios Unidos")
+replace bajo1_word_2 = violence_project1playerr13 if (violence_project1playerd2a == "Tunjuelito")
+replace bajo1_word_2 = violence_project1playerr14 if (violence_project1playerd2a == "Teusaquillo")
+replace bajo1_word_2 = violence_project1playerr15 if (violence_project1playerd2a == "Chapinero")
+replace bajo1_word_2 = violence_project1playerr16 if (violence_project1playerd2a == "Antonio Nariño")
+replace bajo1_word_2 = violence_project1playerr17 if (violence_project1playerd2a == "Santa Fe")
+replace bajo1_word_2 = violence_project1playerr18 if (violence_project1playerd2a == "Los Mártires")
+replace bajo1_word_2 = violence_project1playerr19 if (violence_project1playerd2a == "La Candelaria")
+
+*Second district with lower transfer and first elicitated word
+gen bajo2_word_1 = violence_project1playerm1 if (violence_project1playerd2b == "Kennedy") 
+replace bajo2_word_1 = violence_project1playerm2 if (violence_project1playerd2b == "Suba") 
+replace bajo2_word_1 = violence_project1playerm3 if (violence_project1playerd2b == "Engativá")
+replace bajo2_word_1 = violence_project1playerm4 if (violence_project1playerd2b == "Ciudad Bolivar")
+replace bajo2_word_1 = violence_project1playerm5 if (violence_project1playerd2b == "Bosa")
+replace bajo2_word_1 = violence_project1playerm6 if (violence_project1playerd2b == "Usaquén")
+replace bajo2_word_1 = violence_project1playerm7 if (violence_project1playerd2b == "San Cristobal")
+replace bajo2_word_1 = violence_project1playerm8 if (violence_project1playerd2b == "Rafael Uribe")
+replace bajo2_word_1 = violence_project1playerm9 if (violence_project1playerd2b == "Fontibón")
+replace bajo2_word_1 = violence_project1playerm10 if (violence_project1playerd2b == "Usme")
+replace bajo2_word_1 = violence_project1playerm11 if (violence_project1playerd2b == "Puente Aranda")
+replace bajo2_word_1 = violence_project1playerm12 if (violence_project1playerd2b == "Barrios Unidos")
+replace bajo2_word_1 = violence_project1playerm13 if (violence_project1playerd2b == "Tunjuelito")
+replace bajo2_word_1 = violence_project1playerm14 if (violence_project1playerd2b == "Teusaquillo")
+replace bajo2_word_1 = violence_project1playerm15 if (violence_project1playerd2b == "Chapinero")
+replace bajo2_word_1 = violence_project1playerm16 if (violence_project1playerd2b == "Antonio Nariño")
+replace bajo2_word_1 = violence_project1playerm17 if (violence_project1playerd2b == "Santa Fe")
+replace bajo2_word_1 = violence_project1playerm18 if (violence_project1playerd2b == "Los Mártires")
+replace bajo2_word_1 = violence_project1playerm19 if (violence_project1playerd2b == "La Candelaria")
+
+*First district with higher transfer and second elicitated word
+gen bajo2_word_2 = violence_project1playerr1 if (violence_project1playerd2b == "Kennedy") 
+replace bajo2_word_2 = violence_project1playerr2 if (violence_project1playerd2b == "Suba") 
+replace bajo2_word_2 = violence_project1playerr3 if (violence_project1playerd2b == "Engativá")
+replace bajo2_word_2 = violence_project1playerr4 if (violence_project1playerd2b == "Ciudad Bolivar")
+replace bajo2_word_2 = violence_project1playerr5 if (violence_project1playerd2b == "Bosa")
+replace bajo2_word_2 = violence_project1playerr6 if (violence_project1playerd2b == "Usaquén")
+replace bajo2_word_2 = violence_project1playerr7 if (violence_project1playerd2b == "San Cristobal")
+replace bajo2_word_2 = violence_project1playerr8 if (violence_project1playerd2b == "Rafael Uribe")
+replace bajo2_word_2 = violence_project1playerr9 if (violence_project1playerd2b == "Fontibón")
+replace bajo2_word_2 = violence_project1playerr10 if (violence_project1playerd2b == "Usme")
+replace bajo2_word_2 = violence_project1playerr11 if (violence_project1playerd2b == "Puente Aranda")
+replace bajo2_word_2 = violence_project1playerr12 if (violence_project1playerd2b == "Barrios Unidos")
+replace bajo2_word_2 = violence_project1playerr13 if (violence_project1playerd2b == "Tunjuelito")
+replace bajo2_word_2 = violence_project1playerr14 if (violence_project1playerd2b == "Teusaquillo")
+replace bajo2_word_2 = violence_project1playerr15 if (violence_project1playerd2b == "Chapinero")
+replace bajo2_word_2 = violence_project1playerr16 if (violence_project1playerd2b == "Antonio Nariño")
+replace bajo2_word_2 = violence_project1playerr17 if (violence_project1playerd2b == "Santa Fe")
+replace bajo2_word_2 = violence_project1playerr18 if (violence_project1playerd2b == "Los Mártires")
+replace bajo2_word_2 = violence_project1playerr19 if (violence_project1playerd2b == "La Candelaria")
+
+
 *Merge with Multiproposito database
 
-merge m:1 localidad using basemulti2017.dta
+merge m:m localidad using basemulti2017.dta
 
 *Reshape data
-reshape long violence_project1playerq violence_project1playerp violence_project1players violence_project1playerm violence_project1playerr, i(id) j(district)
+*reshape long violence_project1playerq violence_project1playerp violence_project1players violence_project1playerm violence_project1playerr, i(id) j(district)
 
 *Merge with word classification
 drop _merge
-merge m:m violence_project1playerm using base_class.dta
+*alto1_word_1
+merge m:m alto1_word_1 using base_class_wide.dta
 
-rename violence violence_m
-rename distance distance_m
-rename income income_m
-rename poverty poverty_m
-rename otra otra_m
-rename class class_m
+drop if id == .
+
+rename class class_alto1_word_1
 
 drop _merge
 
-merge m:m violence_project1playerr using base_class.dta
-rename violence violence_r
-rename distance distance_r
-rename income income_r
-rename poverty poverty_r
-rename otra otra_r
-rename class class_r
+*alto1_word_2
+merge m:m alto1_word_2 using base_class_wide.dta
 
-drop in 15714/18738
+drop if id == .
+
+rename class class_alto1_word_2
+
+drop _merge
+*alto2_word_1
+merge m:m alto2_word_1 using base_class_wide.dta
+
+drop if id == .
+
+rename class class_alto2_word_1
+
+drop _merge
+
+*alto2_word_2
+merge m:m alto2_word_2 using base_class_wide.dta
+
+drop if id == .
+
+rename class class_alto2_word_2
+
+drop _merge
+
+*bajo1_word_1
+merge m:m bajo1_word_1 using base_class_wide.dta
+
+drop if id == .
+
+rename class class_bajo1_word_1
+
+drop _merge
+
+*bajo1_word_2
+merge m:m bajo1_word_2 using base_class_wide.dta
+
+drop if id == .
+
+rename class class_bajo1_word_2
+
+drop _merge
+
+*bajo2_word_1
+merge m:m bajo2_word_1 using base_class_wide.dta
+
+drop if id == .
+
+rename class class_bajo2_word_1
+
+drop _merge
+
+*bajo2_word_2
+merge m:m bajo2_word_2 using base_class_wide.dta
+
+drop if id == .
+
+rename class class_bajo2_word_2
+
+drop _merge
+
+duplicates drop id, force
 
 /*====================================================================
                    1: Word analysis
 ====================================================================*/
 
+/*
+*type 1
+gen income_all_high = 0
+replace income_all_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+
+gen bad_all_low = 0 
+replace bad_all_low = 1 if (class_bajo1_word_1 == 1 | class_bajo1_word_1 == 2 | class_bajo1_word_1 == 4) ///
+& (class_bajo1_word_2 == 1 | class_bajo1_word_2 == 2 | class_bajo1_word_2 == 4) ///
+& (class_bajo2_word_1 == 1 | class_bajo2_word_1 == 2 | class_bajo2_word_1 == 4) ///
+& (class_bajo2_word_2 == 1 | class_bajo2_word_2 == 2 | class_bajo2_word_2 == 4)
+
+gen type_1 = 0
+replace type_1 = 1 if (income_all_high == 1 & bad_all_low ==1 )
+
+*type 2
+
+gen income_all_low = 0
+replace income_all_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+
+gen bad_all_high = 0 
+replace bad_all_high = 1 if (class_alto1_word_1 == 1 | class_alto1_word_1 == 2 | class_alto1_word_1 == 4) ///
+& (class_alto1_word_2 == 1 | class_alto1_word_2 == 2 | class_alto1_word_2 == 4) ///
+& (class_alto2_word_1 == 1 | class_alto2_word_1 == 2 | class_alto2_word_1 == 4) ///
+& (class_alto2_word_2 == 1 | class_alto2_word_2 == 2 | class_alto2_word_2 == 4)
+
+gen type_2 = 0
+replace type_2 = 1 if (income_all_low == 1 & bad_all_high ==1 )
+
+*type 3
+gen income_at_least_high = 0
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 3 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 3 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 3 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 0 & class_alto2_word_1 == 3 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 3 & class_alto2_word_1 == 0 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 0 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+
+gen bad_at_least_low = 0
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 2 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 2 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 2 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 2) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 2 & class_bajo1_word_2 == 2 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 2 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 2 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 2 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 2) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 2 & class_bajo2_word_1 == 2 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 2 & class_bajo2_word_2 == 2) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 2 & class_bajo1_word_2 == 2 & class_bajo2_word_1 == 2 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 2 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 2 & class_bajo2_word_2 == 2) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 2 & class_bajo2_word_1 == 2 & class_bajo2_word_2 == 2) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 2 & class_bajo1_word_2 == 2 & class_bajo2_word_1 == 2 & class_bajo2_word_2 == 2) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 4) 
+
+gen type_3 = 0
+replace type_3 = 1 if (income_at_least_high == 1 & bad_at_least_low ==1 )
+
+*type 4
+gen income_at_least_low = 0
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+
+
+gen bad_at_least_high = 0
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 1 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 1 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 1 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 0 & class_alto2_word_1 == 1 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 1 & class_alto2_word_1 == 1 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 1 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 1 & class_alto2_word_1 == 1 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 0 & class_alto2_word_1 == 1 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 1 & class_alto2_word_1 == 1 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 1 & class_alto2_word_1 == 1 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 2 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 2 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 2 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 2) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 2 & class_alto1_word_2 == 2 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 2 & class_alto1_word_2 == 0 & class_alto2_word_1 == 2 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 2 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 2) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 2 & class_alto2_word_1 == 2 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 2 & class_alto2_word_2 == 2) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 2 & class_alto1_word_2 == 2 & class_alto2_word_1 == 2 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 2 & class_alto1_word_2 == 0 & class_alto2_word_1 == 2 & class_alto2_word_2 == 2) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 2 & class_alto2_word_1 == 2 & class_alto2_word_2 == 2) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 2 & class_alto1_word_2 == 2 & class_alto2_word_1 == 2 & class_alto2_word_2 == 2) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 4 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 4 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 4 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 0 & class_alto2_word_1 == 4 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 4 & class_alto2_word_1 == 4 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 4 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 4 & class_alto2_word_1 == 4 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 0 & class_alto2_word_1 == 4 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 4 & class_alto2_word_1 == 4 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 4 & class_alto2_word_1 == 4 & class_alto2_word_2 == 4)
+
+
+gen type_4 = 0
+replace type_4 = 1 if (income_at_least_low == 1 & bad_at_least_high ==1 )
+
+
+*type_5
+cap: drop only_other_low 
+cap: drop type_5
+gen only_other_low = 0
+replace only_other_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0)
+
+gen type_5 = 0
+replace type_5 = 1 if (income_at_least_high == 1 & only_other_low ==1 )
+
+*type_6
+cap: drop only_other_high
+cap: drop type_6
+gen only_other_high = 0
+replace only_other_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0)
+
+gen type_6 = 0
+replace type_6 = 1 if (bad_at_least_low == 1 & only_other_high ==1 )
+
+
+*type_7
+cap: drop type_7
+
+gen type_7 = 0
+replace type_7 = 1 if (bad_at_least_high == 1 & only_other_low ==1 )
+
+*type_8
+cap: drop type_8
+
+gen type_8 = 0
+replace type_8 = 1 if (income_at_least_high == 1 & only_other_high ==1 )
+
+*type_9 
+
+gen type_9 = 0
+replace type_9 = 1 if (only_other_low ==1 & only_other_high ==1)
+
+*/
+*New classification distance == other
+*replace class_alto1_word_1 = 0 if class_alto1_word_1 == 2
+*replace class_alto1_word_2 = 0 if class_alto1_word_2 == 2
+*replace class_alto2_word_1 = 0 if class_alto2_word_1 == 2
+*replace class_alto2_word_2 = 0 if class_alto2_word_2 == 2
+*replace class_bajo1_word_1 = 0 if class_bajo1_word_1 == 2
+*replace class_bajo1_word_2 = 0 if class_bajo1_word_2 == 2
+*replace class_bajo2_word_1 = 0 if class_bajo2_word_1 == 2
+*replace class_bajo2_word_2 = 0 if class_bajo2_word_2 == 2
+
+*type 1
+gen income_all_high = 0
+replace income_all_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+
+gen bad_all_low = 0 
+replace bad_all_low = 1 if (class_bajo1_word_1 == 1 | class_bajo1_word_1 == 4) ///
+& (class_bajo1_word_2 == 1 | class_bajo1_word_2 == 4) ///
+& (class_bajo2_word_1 == 1 | class_bajo2_word_1 == 4) ///
+& (class_bajo2_word_2 == 1 | class_bajo2_word_2 == 4)
+
+gen type_1 = 0
+replace type_1 = 1 if (income_all_high == 1 & bad_all_low ==1 )
+
+*type 2
+
+gen income_all_low = 0
+replace income_all_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+
+gen bad_all_high = 0 
+replace bad_all_high = 1 if (class_alto1_word_1 == 1 | class_alto1_word_1 == 4) ///
+& (class_alto1_word_2 == 1 | class_alto1_word_2 == 4) ///
+& (class_alto2_word_1 == 1 | class_alto2_word_1 == 4) ///
+& (class_alto2_word_2 == 1 | class_alto2_word_2 == 4)
+
+gen type_2 = 0
+replace type_2 = 1 if (income_all_low == 1 & bad_all_high ==1 )
+
+*type 3
+gen income_at_least_high = 0
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 3 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 3 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 3 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 0 & class_alto2_word_1 == 3 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 3 & class_alto2_word_1 == 0 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 0)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 0 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+replace income_at_least_high = 1 if (class_alto1_word_1 == 3 & class_alto1_word_2 == 3 & class_alto2_word_1 == 3 & class_alto2_word_2 == 3)
+
+gen bad_at_least_low = 0
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 1) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 1 & class_bajo1_word_2 == 1 & class_bajo2_word_1 == 1 & class_bajo2_word_2 == 1) 
+
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 0) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 4) 
+replace bad_at_least_low = 1 if (class_bajo1_word_1 == 4 & class_bajo1_word_2 == 4 & class_bajo2_word_1 == 4 & class_bajo2_word_2 == 4) 
+
+gen type_3 = 0
+replace type_3 = 1 if (income_at_least_high == 1 & bad_at_least_low ==1 )
+
+*type 4
+gen income_at_least_low = 0
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 0)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+replace income_at_least_low = 1 if (class_bajo1_word_1 == 3 & class_bajo1_word_2 == 3 & class_bajo2_word_1 == 3 & class_bajo2_word_2 == 3)
+
+
+gen bad_at_least_high = 0
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 1 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 1 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 1 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 0 & class_alto2_word_1 == 1 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 1 & class_alto2_word_1 == 1 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 1 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 1 & class_alto2_word_1 == 1 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 0 & class_alto2_word_1 == 1 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 1 & class_alto2_word_1 == 1 & class_alto2_word_2 == 1) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 1 & class_alto1_word_2 == 1 & class_alto2_word_1 == 1 & class_alto2_word_2 == 1) 
+
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 4 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 4 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 4 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 0 & class_alto2_word_1 == 4 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 4 & class_alto2_word_1 == 4 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 4 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 4 & class_alto2_word_1 == 4 & class_alto2_word_2 == 0) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 0 & class_alto2_word_1 == 4 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 4 & class_alto2_word_1 == 4 & class_alto2_word_2 == 4) 
+replace bad_at_least_high = 1 if (class_alto1_word_1 == 4 & class_alto1_word_2 == 4 & class_alto2_word_1 == 4 & class_alto2_word_2 == 4)
+
+gen type_4 = 0
+replace type_4 = 1 if (income_at_least_low == 1 & bad_at_least_high ==1 )
+
+*type_5
+cap: drop only_other_low 
+cap: drop type_5
+gen only_other_low = 0
+replace only_other_low = 1 if (class_bajo1_word_1 == 0 & class_bajo1_word_2 == 0 & class_bajo2_word_1 == 0 & class_bajo2_word_2 == 0)
+
+gen type_5 = 0
+replace type_5 = 1 if (income_at_least_high == 1 & only_other_low ==1 )
+
+*type_6
+cap: drop only_other_high
+cap: drop type_6
+gen only_other_high = 0
+replace only_other_high = 1 if (class_alto1_word_1 == 0 & class_alto1_word_2 == 0 & class_alto2_word_1 == 0 & class_alto2_word_2 == 0)
+
+gen type_6 = 0
+replace type_6 = 1 if (bad_at_least_low == 1 & only_other_high ==1 )
+
+
+*type_7
+cap: drop type_7
+
+gen type_7 = 0
+replace type_7 = 1 if (bad_at_least_high == 1 & only_other_low ==1 )
+
+*type_8
+cap: drop type_8
+
+gen type_8 = 0
+replace type_8 = 1 if (income_at_least_high == 1 & only_other_high ==1 )
+
+*type_9 
+
+gen type_9 = 0
+replace type_9 = 1 if (only_other_low ==1 & only_other_high ==1)
+tab type_9
+
+*type_10 
+gen type_10 = 0
+replace type_10 = 1 if (income_all_high == 1 & income_all_low == 1)
+tab type_10
+
+*type_11
+gen type_11 = 0
+replace type_11 = 1 if (bad_all_high == 1 & bad_all_low == 1)
+tab type_11
+
+*type_12 mixed 
+cap: drop type_12
+gen type_12 = 0 
+replace type_12 = 1 if (class_alto1_word_1 != 0 & class_alto1_word_2 != 0 & class_alto2_word_1 != 0 & class_alto2_word_2 != 0 & ///
+ class_bajo1_word_1 != 0 & class_bajo1_word_2 != 0 & class_bajo2_word_1 != 0 & class_bajo2_word_2 != 0 )
+
+
+
+
+/*
 *generate a variable of selected districts
 gen alto1 = 1 if violence_project1playerd1a == "Kennedy"
 replace alto1 = 2 if violence_project1playerd1a == "Suba"
@@ -171,7 +777,6 @@ replace bajo2 = 19 if violence_project1playerd2b == "La Candelaria"
 
 ***Word assosited with the districts selected
 *Hi_1 word
-gen alto1_word = violence_project1playerm if alto1 == 1 
 
 
 
@@ -182,7 +787,7 @@ gen alto1_word = violence_project1playerm if alto1 == 1
 
 
 
-
+*/
 
 
 
